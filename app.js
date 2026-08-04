@@ -15,8 +15,34 @@ quizOptions.forEach(option=>option.addEventListener("click",()=>{quizOptions.for
 const tabButtons=document.querySelectorAll(".tab-button"),tabPanels=document.querySelectorAll(".tab-panel"),visitedTabs=new Set(["grow"]);
 tabButtons.forEach(button=>button.addEventListener("click",()=>{tabButtons.forEach(i=>i.classList.remove("active"));tabPanels.forEach(i=>i.classList.remove("active"));button.classList.add("active");document.getElementById(button.dataset.tab).classList.add("active");visitedTabs.add(button.dataset.tab);if(visitedTabs.size===tabButtons.length)completeInteraction("people-tabs")}))
 
-const accordionButtons=document.querySelectorAll(".accordion-button"),exploredAccordions=new Set();
-accordionButtons.forEach((button,index)=>button.addEventListener("click",()=>{const panel=button.nextElementSibling,isOpen=button.classList.toggle("open");panel.classList.toggle("open",isOpen);button.querySelector("span").textContent=isOpen?"−":"+";exploredAccordions.add(index);if(exploredAccordions.size===accordionButtons.length)completeInteraction("community-accordion")}))
+const communityTiles =
+  document.querySelectorAll(".community-tile");
+
+const exploredCommunityTiles = new Set();
+
+communityTiles.forEach(function (tile, index) {
+  tile.addEventListener("click", function () {
+    const isOpen = tile.classList.toggle("open");
+
+    tile.setAttribute("aria-expanded", String(isOpen));
+
+    const symbol =
+      tile.querySelector(".community-tile-symbol");
+
+    if (symbol) {
+      symbol.textContent = isOpen ? "−" : "+";
+    }
+
+    exploredCommunityTiles.add(index);
+
+    if (
+      exploredCommunityTiles.size ===
+      communityTiles.length
+    ) {
+      completeInteraction("community-tiles");
+    }
+  });
+});
 
 const integrityCards=document.querySelectorAll(".integrity-card"),exploredIntegrity=new Set();
 integrityCards.forEach((card,index)=>card.addEventListener("click",()=>{card.classList.add("explored");exploredIntegrity.add(index)}));
