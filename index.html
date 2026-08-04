@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acumetis sustainability commitments onboarding module.">
+  <title>Our Sustainability Commitments | Acumetis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="top">
+  <div class="overall-progress" aria-live="polite">
+    <div class="progress-inner">
+      <div class="progress-label" id="progressLabel">0 of 5 interactions completed</div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    </div>
+  </div>
+
+  <section class="section hero">
+    <div class="container">
+      <span class="hero-tag">Sustainability at Acumetis</span>
+      <h1>Our Sustainability Commitments</h1>
+      <p class="hero-subtitle">Explore Acumetis’ sustainability strategy, the priorities that guide our decisions, and the goals we’re working toward as a company.</p>
+      <a class="scroll-link" href="#strategy">Begin exploring ↓</a>
+    </div>
+  </section>
+
+  <section class="section strategy-section" id="strategy">
+    <div class="container">
+      <p class="eyebrow">Our Sustainability Strategy</p>
+      <h2>Sustainability isn’t a single initiative.</h2>
+      <p class="lead">It’s embedded in how we operate, support our employees, serve our clients, and contribute to the communities we serve.</p>
+      <p class="lead">To help focus our efforts and measure our progress, Acumetis organizes its sustainability strategy around four key pillars.</p>
+
+      <div class="pillar-wheel" aria-label="Acumetis sustainability pillars">
+        <button class="wheel-pillar wheel-top" type="button" data-title="Our People" data-description="Creating a workplace where people can thrive.">
+          <span class="wheel-icon">👥</span><span>Our People</span>
+        </button>
+        <button class="wheel-pillar wheel-left active" type="button" data-title="Our Planet" data-description="Measuring our impact, setting science-based goals, and taking action.">
+          <span class="wheel-icon">🌎</span><span>Our Planet</span>
+        </button>
+        <div class="wheel-center" aria-live="polite">
+          <span class="wheel-label">Our Sustainability Strategy</span>
+          <h3 id="wheelTitle">Our Planet</h3>
+          <p id="wheelDescription">Measuring our impact, setting science-based goals, and taking action.</p>
+        </div>
+        <button class="wheel-pillar wheel-right" type="button" data-title="Our Business" data-description="Embedding sustainability into how we operate.">
+          <span class="wheel-icon">🏢</span><span>Our Business</span>
+        </button>
+        <button class="wheel-pillar wheel-bottom" type="button" data-title="Our Communities" data-description="Creating positive impact beyond our offices.">
+          <span class="wheel-icon">🤝</span><span>Our Communities</span>
+        </button>
+      </div>
+
+      <div class="wheel-footer">
+        <p>Select each pillar to learn what it represents. The module then continues in order through Planet, People, Communities, and Business.</p>
+        <a class="primary-link" href="#planet">Begin with Our Planet ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section planet-section" id="planet">
+    <div class="container">
+      <p class="eyebrow light">Our Planet</p>
+      <h2>Measuring our impact. Setting science-based goals. Taking action.</h2>
+
+      <div class="two-column">
+        <div>
+          <h3>Climate action begins with measurement.</h3>
+          <p>We can’t improve what we don’t measure. Each year, Acumetis measures its greenhouse gas emissions, identifies the activities that contribute most to our footprint, and develops strategies to reduce them.</p>
+          <p>This includes improving energy efficiency, reducing waste, and working with suppliers that support responsible environmental practices.</p>
+        </div>
+        <div class="dark-panel">
+          <h3>Our environmental priorities</h3>
+          <ul class="check-list">
+            <li>Measuring and reporting our greenhouse gas emissions annually</li>
+            <li>Improving energy efficiency across our offices</li>
+            <li>Reducing waste and promoting responsible waste management</li>
+            <li>Working with suppliers that support sustainable business practices</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="target-layout">
+        <div>
+          <p class="eyebrow light">Our Climate Commitment</p>
+          <h3>Science-based climate action</h3>
+          <p>To ensure our climate goals align with the latest climate science, Acumetis has committed to the Science Based Targets initiative (SBTi).</p>
+        </div>
+        <button class="target-card" id="targetCard" type="button">
+          <span class="target-small">Our current target</span>
+          <span class="target-number">50.4%</span>
+          <span>Reduce Scope 2 greenhouse gas emissions by 50.4% by 2032 from a 2024 baseline.</span>
+          <span class="target-prompt">Select to mark explored</span>
+        </button>
+      </div>
+
+      <div class="resource-card">
+        <div>
+          <h3>The Science Based Targets initiative (SBTi)</h3>
+          <p>Learn how the SBTi helps organizations set greenhouse gas reduction targets aligned with the latest climate science.</p>
+        </div>
+        <a class="resource-link" href="https://sciencebasedtargets.org/about-us" target="_blank" rel="noopener">Explore SBTi →</a>
+      </div>
+
+      <div class="quiz-panel">
+        <p class="eyebrow light">Did you know?</p>
+        <h3>What does the SBTi validate?</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" type="button">Corporate climate targets</button>
+          <button class="quiz-option" type="button">Office recycling programs</button>
+          <button class="quiz-option" type="button">Employee commuting surveys</button>
+        </div>
+        <div class="quiz-feedback" id="quizFeedback" aria-live="polite">
+          <strong>Corporate climate targets.</strong> The SBTi validates corporate climate targets to ensure they align with the latest climate science and support limiting global warming to 1.5°C.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section people-section" id="people">
+    <div class="container">
+      <p class="eyebrow">Our People</p>
+      <h2>Creating a workplace where people can thrive.</h2>
+      <p class="lead">At Acumetis, sustainability means more than protecting the environment. It’s about creating a workplace where people feel supported, connected, and empowered to do their best work.</p>
+      <p class="lead">We believe that when we invest in our people, we build a stronger, more resilient business for the future.</p>
+
+      <div class="tab-list" role="tablist" aria-label="Our People commitments">
+        <button class="tab-button active" type="button" data-tab="grow">🌱 Learn &amp; Grow</button>
+        <button class="tab-button" type="button" data-tab="connect">🤝 Connect &amp; Engage</button>
+        <button class="tab-button" type="button" data-tab="belong">🌍 Belong &amp; Be Supported</button>
+      </div>
+
+      <div class="tab-panel active" id="grow">
+        <h3>Learn &amp; Grow</h3>
+        <p>We encourage continuous learning by providing employees with opportunities to build new skills, develop professionally, and grow their careers.</p>
+        <ul>
+          <li>Individual Development Plans, regular performance feedback, and clearly defined career pathways to support professional growth.</li>
+          <li>An Educational Assistance Program that helps eligible employees pursue approved external education by reimbursing qualifying tuition and course expenses.</li>
+          <li>Conferences, workshops, and professional development opportunities.</li>
+          <li>Education and training through the Academy and company-wide learning sessions.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="connect">
+        <h3>Connect &amp; Engage</h3>
+        <p>A sustainable workplace is one where employees feel connected to one another and to our shared purpose.</p>
+        <ul>
+          <li>Weekly team lunches, office celebrations, and social events across our global locations.</li>
+          <li>Company-wide initiatives such as our annual June Fitness Challenge and other wellness activities.</li>
+          <li>Volunteer opportunities and employee engagement initiatives that support the communities where we live and work.</li>
+          <li>Interest-based Microsoft Teams communities where employees can connect over food, sports, books, and other shared interests.</li>
+        </ul>
+      </div>
+
+      <div class="tab-panel" id="belong">
+        <h3>Belong &amp; Be Supported</h3>
+        <p>We are committed to creating an inclusive, respectful workplace where everyone can succeed.</p>
+        <ul>
+          <li>Equal Opportunity and Anti-Harassment policies that foster a safe and respectful workplace.</li>
+          <li>Diversity, Equity, and Inclusion initiatives and celebrations, including Pride Month and International Women’s Day.</li>
+          <li>Flexible ways of working that support work-life balance across our global offices.</li>
+          <li>Employee recognition through our Kudos program and appreciation initiatives.</li>
+          <li>A collaborative culture where employees are encouraged to share ideas, ask questions, and engage directly with leadership.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section communities-section" id="communities">
+    <div class="container">
+      <p class="eyebrow">Our Communities</p>
+      <h2>Creating positive impact beyond our offices.</h2>
+
+      <div class="two-column">
+        <div>
+          <h3>🌍 Giving Back</h3>
+          <p>At Acumetis, our impact extends beyond the work we do every day. As a healthcare and life sciences consulting firm, we support organizations working to improve patient outcomes around the world while encouraging employees to make a difference in the communities where they live and work.</p>
+          <p>We believe creating stronger communities starts with both the work we do and the way we give back.</p>
+        </div>
+        <div class="accordion">
+          <button class="accordion-button" type="button">Volunteer opportunities <span>+</span></button>
+          <div class="accordion-panel">Volunteer opportunities are available throughout the year.</div>
+          <button class="accordion-button" type="button">Time to volunteer <span>+</span></button>
+          <div class="accordion-panel">Dedicated volunteer time or flexible paid time off for volunteering is available where offered by local office policies.</div>
+          <button class="accordion-button" type="button">Fundraising and charitable giving <span>+</span></button>
+          <div class="accordion-panel">Acumetis supports fundraising and charitable giving initiatives.</div>
+          <button class="accordion-button" type="button">Pro bono projects <span>+</span></button>
+          <div class="accordion-panel">Our expertise supports healthcare initiatives, including work that helps connect patients with rare diseases to clinical trials and treatment opportunities.</div>
+          <button class="accordion-button" type="button">Employee-led community engagement <span>+</span></button>
+          <div class="accordion-panel">Employees lead activities that support local organizations and causes.</div>
+        </div>
+      </div>
+
+      <div class="spotlight">
+        <span class="spotlight-icon">🌟</span>
+        <div>
+          <p class="eyebrow light">Community Impact Spotlight</p>
+          <h3>In 2025, Acumetis donated $X to charity.</h3>
+          <p class="placeholder-note">Replace “$X” once the final amount is confirmed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section business-section" id="business">
+    <div class="container">
+      <p class="eyebrow">Our Business</p>
+      <h2>Embedding sustainability into how we operate.</h2>
+      <p class="lead">Creating a sustainable business means operating responsibly, ethically, and transparently.</p>
+      <p class="lead">At Acumetis, strong governance helps ensure we make decisions that build trust with our employees, clients, and stakeholders while continuously improving the way we operate.</p>
+
+      <div class="integrity-panel">
+        <h3>🤝 Operating with Integrity</h3>
+        <p>Responsible business means acting ethically, transparently, and with accountability.</p>
+        <div class="integrity-grid">
+          <button class="integrity-card" type="button">Business Ethics and Code of Conduct policies</button>
+          <button class="integrity-card" type="button">Data Privacy and Information Security programs</button>
+          <button class="integrity-card" type="button">Responsible supplier management and sustainable procurement</button>
+          <button class="integrity-card" type="button">Transparent ESG reporting and continuous improvement</button>
+          <button class="integrity-card" type="button">Annual compliance training</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section next-section">
+    <div class="container">
+      <p class="eyebrow light">Your Role</p>
+      <h2>Every employee contributes to our sustainability strategy.</h2>
+      <p>In the next module, you’ll discover how your everyday actions help turn these commitments into meaningful impact.</p>
+      <a class="next-link" href="#top">Return to the beginning ↑</a>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
