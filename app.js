@@ -3,8 +3,8 @@ const completed=new Set(),totalInteractions=5;
 const progressLabel=document.getElementById("progressLabel"),progressBar=document.getElementById("progressBar");
 function completeInteraction(name){completed.add(name);const count=completed.size;progressLabel.textContent=`${count} of ${totalInteractions} interactions completed`;progressBar.style.width=`${count/totalInteractions*100}%`}
 
-const wheelPillars=document.querySelectorAll(".wheel-pillar"),wheelTitle=document.getElementById("wheelTitle"),wheelDescription=document.getElementById("wheelDescription"),exploredPillars=new Set(["Our Planet"]);
-wheelPillars.forEach(pillar=>pillar.addEventListener("click",()=>{wheelPillars.forEach(i=>i.classList.remove("active"));pillar.classList.add("active");wheelTitle.textContent=pillar.dataset.title;wheelDescription.textContent=pillar.dataset.description;exploredPillars.add(pillar.dataset.title);if(exploredPillars.size===wheelPillars.length)completeInteraction("pillar-wheel")}))
+const wheelPillars=document.querySelectorAll(".wheel-pillar"),wheelTitle=document.getElementById("wheelTitle"),wheelDescription=document.getElementById("wheelDescription"),wheelInstruction=document.getElementById("wheelInstruction"),wheelSummaryContent=document.getElementById("wheelSummaryContent"),exploredPillars=new Set();
+wheelPillars.forEach(pillar=>pillar.addEventListener("click",()=>{wheelPillars.forEach(i=>{i.classList.remove("active");i.setAttribute("aria-pressed","false")});pillar.classList.add("active");pillar.setAttribute("aria-pressed","true");wheelInstruction.hidden=true;wheelSummaryContent.hidden=false;wheelTitle.textContent=pillar.dataset.title;wheelDescription.textContent=pillar.dataset.description;exploredPillars.add(pillar.dataset.title);if(exploredPillars.size===wheelPillars.length)completeInteraction("pillar-wheel")}))
 
 const targetCard=document.getElementById("targetCard");
 targetCard.addEventListener("click",()=>{targetCard.classList.add("explored");completeInteraction("target")});
