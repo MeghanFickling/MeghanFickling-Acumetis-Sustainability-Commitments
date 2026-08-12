@@ -45,4 +45,4 @@ communityTiles.forEach(function (tile, index) {
 });
 
 const integrityCards=document.querySelectorAll(".integrity-card"),exploredIntegrity=new Set();
-integrityCards.forEach((card,index)=>card.addEventListener("click",()=>{card.classList.add("explored");exploredIntegrity.add(index)}));
+integrityCards.forEach((card,index)=>card.addEventListener("click",()=>{const isOpen=card.classList.toggle("open");card.setAttribute("aria-expanded",String(isOpen));const symbol=card.querySelector(".integrity-symbol");if(symbol)symbol.textContent=isOpen?"−":"+";exploredIntegrity.add(index)}));
