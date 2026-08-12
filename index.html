@@ -33,22 +33,24 @@
       <p class="lead">To help focus our efforts and measure our progress, Acumetis organizes its sustainability strategy around four key pillars.</p>
 
       <div class="pillar-wheel" aria-label="Acumetis sustainability pillars">
-        <button class="wheel-pillar wheel-top" type="button" data-title="Our People" data-description="Creating a workplace where people can thrive.">
-          <span class="wheel-icon">👥</span><span>Our People</span>
+        <button class="wheel-pillar wheel-top" type="button" data-title="Our People" data-description="Creating a workplace where people can thrive." aria-pressed="false">
+          <span class="wheel-icon" aria-hidden="true">👥</span><span>Our People</span>
         </button>
-        <button class="wheel-pillar wheel-left active" type="button" data-title="Our Planet" data-description="Measuring our impact, setting science-based goals, and taking action.">
-          <span class="wheel-icon">🌎</span><span>Our Planet</span>
+        <button class="wheel-pillar wheel-left" type="button" data-title="Our Planet" data-description="Measuring our impact, setting science-based goals, and taking action." aria-pressed="false">
+          <span class="wheel-icon" aria-hidden="true">🌎</span><span>Our Planet</span>
         </button>
-        <div class="wheel-center" aria-live="polite">
-          <span class="wheel-label">Our Sustainability Strategy</span>
-          <h3 id="wheelTitle">Our Planet</h3>
-          <p id="wheelDescription">Measuring our impact, setting science-based goals, and taking action.</p>
+        <div class="wheel-summary" aria-live="polite">
+          <p class="wheel-instruction" id="wheelInstruction">Select a pillar to learn what it represents.</p>
+          <div class="wheel-summary-content" id="wheelSummaryContent" hidden>
+            <h3 id="wheelTitle"></h3>
+            <p id="wheelDescription"></p>
+          </div>
         </div>
-        <button class="wheel-pillar wheel-right" type="button" data-title="Our Business" data-description="Embedding sustainability into how we operate.">
-          <span class="wheel-icon">🏢</span><span>Our Business</span>
+        <button class="wheel-pillar wheel-right" type="button" data-title="Our Business" data-description="Embedding sustainability into how we operate." aria-pressed="false">
+          <span class="wheel-icon" aria-hidden="true">🏢</span><span>Our Business</span>
         </button>
-        <button class="wheel-pillar wheel-bottom" type="button" data-title="Our Communities" data-description="Creating positive impact beyond our offices.">
-          <span class="wheel-icon">🤝</span><span>Our Communities</span>
+        <button class="wheel-pillar wheel-bottom" type="button" data-title="Our Communities" data-description="Creating positive impact beyond our offices." aria-pressed="false">
+          <span class="wheel-icon" aria-hidden="true">🤝</span><span>Our Communities</span>
         </button>
       </div>
 
